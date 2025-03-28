@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ough! Hunt and Gather Co.</title>
+<link rel="stylesheet" href="Cave.css">
+</head>
+<body>
+
+<div class="CaveCeiling">
+  <a href="HomeCave.html"><img src=".\Images\CavemanLogoExpand.png"></img></a>
+  <a href="HireMan.html">Hire caveman</a>
+  <a href="MeetTribe.html">Meet tribe</a>
+  <a onclick="playMusic()">Hear song of our people</a>
+
+<audio id="caveMusic" loop>
+    <source src="sounds/caveman-drums.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    function playMusic() {
+        document.getElementById("caveMusic").play();
+    }
+</script>
+</div>
+
+<div class="Banner">
+  <img src=".\Images\HappyCaveman.jpg"></img>
+</div>
+
+<div class="container">
+  <div class="box">
+    <h1>About Ough! Hunt & Gather Co.</h1>
+    <p>OUGH! Welcome to Ough! Hunt & Gather Co., where smart brain no needed! Only big hunt, big feast, big strong!</p>
+    <p>Need strong hunter? WE SEND BEST SPEAR THROWER! Hunt mammoth, bison, or tiny snack-beast! Need fast gatherer? WE FIND BERRY, ROOT, MUSHROOM! No plant hide from Ough tribe!</p>
+    <p>We no do weak farming. Farming slow. Farming soft. We hunt now, eat now! Meat fresh. Berries juicy. Fire big, belly full! You want feast? OUGH HELP!</p>
+    <p>No more tiny food. No more weak hunger. Live like caveman.<p>
+    <h2>Survive. Thrive. EAT BIG!</h2>
+  </div>
+  <div class="buttonbox">
+    <img src=".\Images\CavemanPoint.png"></img>
+    <a href="HireMan.html" class="button">Hire Caveman NOW!</a>
+  </div>
+</div>
+<h1>Here Our Rates!</h1>
+<div>
+  <table>
+  <tr>
+      <th>Caveman</th>
+      <th>Service</th>
+	  <th>Stones (per service)</th>
+    </tr>
+    <tr>
+      <td>Grog The Slayer</td>
+      <td>Hunter</td>
+      <td>100 Stone</td>
+    </tr>
+    <tr>
+      <td>Lura The Swift</td>
+      <td>Gatherer</td>
+      <td>10 Stone</td>
+    </tr>
+    <tr>
+      <td>Urke The Affordable</td>
+      <td>Hunter</td>
+	  <td>No Stone</td>
+    </tr>
+    <tr>
+      <td>Kuri The Careful</td>
+      <td>Gatherer</td>
+	  <td>12 Stone</td>
+    </tr>
+  </table>
+</div>
+<div class="list">
+  <h2>We have rules to hire caveman</h2>
+  <ul>
+    <li>No stone backs</li>
+    <li>Price stay like cave</li>
+    <li>No fight caveman</li>
+  </ul>  
+</div>
+</body>
+</html>

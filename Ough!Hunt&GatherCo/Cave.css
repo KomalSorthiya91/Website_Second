@@ -1,0 +1,257 @@
+body {
+  background-color: #2f1200;
+  font-family: 'CavemanFont', sans-serif;
+  color: #8B4513;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  color: #8B4513;
+  font-size: 40px;
+  text-align: center;
+}
+p {
+  color: #8B4513;
+  font-size: 25px;
+  text-align: center;
+}
+a {
+  color: #8B4513;
+  font-size: 25px;
+  text-align: center;
+}
+.CaveCeiling {
+  display: block;
+  background-color: #301300;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 50%; /* Start centering */
+  transform: translateX(-50%); /* Fully centers it */
+  width: 80%;
+  max-width: 1500px;
+  padding: 10px 20px; /* Fixed padding issue */
+  text-align: center;
+  z-index: 1000;
+  border-radius: 15px;
+}
+.CaveCeiling img {
+	height: 100px;
+	width: 400px;
+}
+.CaveCeiling a:not(:has(img)):hover {
+  background-image: url('./Images/Burning-Charcoal.jpg');
+}
+.CaveCeiling a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+.CaveCeiling a img:hover {
+  background-color: #301300;
+}
+
+.CaveCeiling a.active {
+  background-image: url('./Images/Fire.jpg');
+  color: white;
+}
+@font-face {
+    font-family: 'CavemanFont';
+    src: url('./Fonts/Caveman.ttf') format('truetype');
+}
+.container {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.box {
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+}
+.buttonbox {
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+    background-image: url('./Images/CaveWall.png');
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.button {
+  background-color: #fc5522;
+  border: none;
+  color: white;
+  padding: 50px 100%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: -4px -2px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.button:hover {
+    background-image: url('./Images/Burning-Charcoal.jpg');
+}
+
+.caveman-hire {
+  text-align: center;
+  color: #8B4513;
+  padding: 30px;
+}
+
+.caveman-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.caveman-card {
+  background-image: url('./Images/CaveWall.png');
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  color: white;
+}
+
+.caveman-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hire-btn {
+  background-color: #fc5522;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.hire-btn:hover {
+  background-image: url('./Images/Burning-Charcoal.jpg');
+}
+
+.blank {
+  margin: 40px, 40px;
+}
+.error-container {
+  max-width: 600px;
+  margin: auto;
+  background-image: url('./Images/CaveWall.png');
+  padding: 100px;
+  align-items: center;
+}
+
+.error-container img {
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+.back-btn {
+  background-color: #fc5522;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  text-align: center;
+}
+.back-btn:hover {
+  background-image: url('./Images/Burning-Charcoal.jpg');
+}
+.tribe-container {
+  text-align: center;
+  background: url('./Images/CaveWall.png'); /* Stone texture */
+  padding: 20px;
+  padding-top: 150px;
+  border-radius: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.tribe-member {
+  background-color: rgba(48, 19, 0, 0.8); /* Caveman brown */
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 15px;
+  width: 60%;
+  color: #f4a460;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: left;
+}
+
+.tribe-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #8B4513;
+}
+
+.tribe-member h2, .tribe-member p {
+  margin: 0;
+}
+table {
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    background-color: #2f1200;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+th {
+  border: 1px solid #8B4513;
+  text-align: left;
+  padding: 8px;
+  font-size: 20px;
+}
+td {
+  border: 1px solid #8B4513;
+  text-align: left;
+  padding: 8px;
+  font-size: 20px;
+}
+tr {
+  background-color: #2f1200;
+}
+.list {
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    background-image: url('./Images/CaveWall.png');
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	font-size: 30px;
+}
